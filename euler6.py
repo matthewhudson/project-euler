@@ -11,14 +11,16 @@ natural numbers and the square of the sum is 3025 - 385 = 2640.
 Find the difference between the sum of the squares of the first
 one hundred natural numbers and the square of the sum.
 """
+
 import operator
 from functools import reduce
-#sum of the squares
-a = reduce(operator.add, [n*n for n in range(1, 100+1)])
 
-b = reduce(operator.add, range(1, 100+1))
+# sum of the squares
+a = reduce(operator.add, [n * n for n in range(1, 100 + 1)])
 
-#square of the sum
-c =  b*b
+b = reduce(operator.add, range(1, 100 + 1))
 
-print(c-a)
+# square of the sum
+c = b * b
+
+print(c - a)

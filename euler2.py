@@ -7,19 +7,21 @@ previous two terms. By starting with 1 and 2, the first 10 terms will be:
 Find the sum of all the even-valued terms in the sequence which do not
 exceed four million.
 """
-#Fibonacci implemented with Memoization, courtesy: http://en.literateprograms.org/Fibonacci_numbers_(Python)#Recursion_with_memoization
-memo = {0:0, 1:1}
+
+# Fibonacci implemented with Memoization, courtesy: http://en.literateprograms.org/Fibonacci_numbers_(Python)#Recursion_with_memoization
+memo = {0: 0, 1: 1}
+
+
 def fib(n):
-    if not n in memo:
-        memo[n] = fib(n-1) + fib(n-2)
+    if n not in memo:
+        memo[n] = fib(n - 1) + fib(n - 2)
     return memo[n]
+
 
 n = 0
 foo = []
 while fib(n) <= 4000000:
     foo.append(fib(n))
-    n = n+1
-    
+    n = n + 1
+
 print(sum(filter(lambda x: x % 2 == 0, foo)))
-
-
