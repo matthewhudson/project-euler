@@ -20,4 +20,4 @@ while len(primes) <= 10000:
         primes.append(n)
     n+=1
 
-print primes
+print(primes)

@@ -19,7 +19,7 @@ for m in range(1,22):
         if m<n:
             a,b,c=euclid(m,n)
             if (a+b+c)==1000:
-                print a*b*c
+                print(a*b*c)
 
 
 

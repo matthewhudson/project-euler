@@ -8,10 +8,10 @@ def primefactors(x):
     loop = 2
     while loop <= x:
         if x % loop == 0:
-            x /= loop
+            x //= loop
             factors.append(loop)
         else:
             loop += 1
     return factors
 
-print max(primefactors(600851475143))
+print(max(primefactors(600851475143)))

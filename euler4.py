@@ -4,7 +4,7 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
-candidates = [x*y for x in xrange(100, 1000) for y in xrange(100, 1000)]
+candidates = [x*y for x in range(100, 1000) for y in range(100, 1000)]
 
 def reverse_number(num):
 	s = ""
@@ -14,4 +14,4 @@ def reverse_number(num):
 
 prospects = [n for n in candidates if n == reverse_number(n)]
 
-print max(prospects)
+print(max(prospects))

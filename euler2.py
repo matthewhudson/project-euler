@@ -20,6 +20,6 @@ while fib(n) <= 4000000:
     foo.append(fib(n))
     n = n+1
     
-print sum(filter(lambda x: x % 2 == 0, foo))
+print(sum(filter(lambda x: x % 2 == 0, foo)))
 
 

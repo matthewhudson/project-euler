@@ -16,11 +16,11 @@ def eratosthenes(n):
             primes.append(i)
             prime += 1
             j = i
-            while (j <= (n / i)): 
+            while (j <= (n // i)):
                 all.append(i * j)
                 j += 1
         i += 2
     return primes
 
 
-print eratosthenes(2000000)
+print(eratosthenes(2000000))
